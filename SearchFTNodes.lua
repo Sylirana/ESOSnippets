@@ -2,7 +2,7 @@
 function SearchFTNodes(searchStr)
 	local found=false;
 	d("Searching fast travel nodes for \""..searchStr.."\".")
-	for i = 1, 200, 1 do
+	for i = 1, 500, 1 do
 		local nameStr=select(2, GetFastTravelNodeInfo(i));
 		if(string.match(nameStr, searchStr)) then
 			d("Found \""..nameStr.."\" at "..i..".")
